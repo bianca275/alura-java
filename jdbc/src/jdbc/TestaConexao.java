@@ -8,11 +8,11 @@ public class TestaConexao {
 
 	public static void main(String[] args) throws SQLException {
 		
-		Connection connection = DriverManager
+		Connection con = DriverManager
 				.getConnection("jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC", "localhost", "localhost27#");
 		
 		System.out.println("Fechando conexão!");
-		connection.close();
+		con.close();
 
 	}
 
