@@ -12,7 +12,7 @@ public class TestaInsercao {
 		Connection con = factory.recuperarConexao();
 		
 		Statement stm = con.createStatement();
-		stm.execute("INSERT INTO PRODUTO (nome, descricao) VALUES ('Mouse', 'Mouse sem fio')", Statement.RETURN_GENERATED_KEYS);
+		stm.execute("INSERT INTO PRODUTO (nome, descricao) VALUES ('MOUSE', 'MOUSE SEM FIO')", Statement.RETURN_GENERATED_KEYS);
 		
 		ResultSet rst = stm.getGeneratedKeys();
 		while(rst.next()) {
